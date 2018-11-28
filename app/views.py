@@ -13,11 +13,11 @@ class Create(View):
         else:
             return redirect('app:show', link.short_code)
 
-        def get(self, request):
-            return render(
-                request,
-                'app/create.html',
-            )
+    def get(self, request):
+        return render(
+            request,
+            'app/create.html',
+        )
 
 
 class Show(View):
